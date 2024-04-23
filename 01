@@ -1,0 +1,26 @@
+def calculadora(num1, num2, operacao):
+    if operacao == 1:
+        return num1 + num2
+    elif operacao == 2:
+        return num1 - num2
+    elif operacao == 3:
+        return num1 * num2
+    elif operacao == 4 and num2 != 0:
+        return num1 / num2
+    else:
+        return 0
+
+resultado = calculadora(5, 3, 1)  # Soma 5 + 3
+print("Resultado da soma:", resultado)
+
+resultado = calculadora(5, 3, 2)  # Subtrai 5 - 3
+print("Resultado da subtração:", resultado)
+
+resultado = calculadora(5, 3, 3)  # Multiplica 5 * 3
+print("Resultado da multiplicação:", resultado)
+
+resultado = calculadora(5, 0, 4)  # Tenta dividir 5 por 0
+print("Resultado da divisão:", resultado)
+
+resultado = calculadora(5, 3, 5)  # Operação inválida
+print("Resultado da operação inválida:", resultado)
